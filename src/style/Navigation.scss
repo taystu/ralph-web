@@ -1,0 +1,65 @@
+$screen-lg-min: 1200px;
+$screen-md-min: 992px;
+$screen-sm-min: 768px;
+$screen-xs-min: 575px;
+$screen-xxs-min: 480px;
+$screen-xxxs-min: 320px;
+
+$screen-gap: 344px;
+
+$primary-blue: #3B5998;
+
+
+.navbar-fixed-top {
+  border-width: 0;
+}
+.navbar {
+	margin-bottom: 0px;
+	min-height: 75px;
+ .navbar-brand {
+ 	padding: 0;
+ }
+ .nav-item {
+  font-size: 1.3em;
+  a {
+    padding-bottom: 23px;
+  }
+ }
+ .navbar-title {
+ 	margin-top: 25px;
+ 	position: relative; 
+ 	left: 25px;
+ 	margin-bottom: 0;
+ 	z-index: 0;
+
+ 	  @media screen and (max-width: $screen-xs-min) {
+      font-size: 1.8em;
+    }
+
+
+ 	  @media screen and (max-width: $screen-xxs-min) {
+      font-size: 1.5em;
+    }
+
+    @media screen and (max-width: $screen-xxxs-min) {
+      font-size: 1.1em;
+  	}
+  }
+
+}
+
+.nav-highlight {
+  border-bottom: 3px solid $primary-blue;
+  a div {
+    color: black;
+  }
+}
+
+.navbar-nav {
+	margin-top: 20px;
+}
+
+.navbar-toggle {
+	margin-top: 22px;
+	z-index: 1;
+}

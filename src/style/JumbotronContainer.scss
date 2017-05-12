@@ -1,0 +1,106 @@
+$screen-lg-min: 1200px;
+$screen-md-min: 992px;
+$screen-sm-min: 768px;
+$screen-xs-min: 575px;
+$screen-xxs-min: 480px;
+
+
+
+.jumbotron-header {
+  position: relative;
+  top: 150px;
+  margin: 0;
+  z-index: 1;
+  color: white;
+  @media screen and (max-width: $screen-sm-min) {
+      font-size: 2em;
+  }
+}
+
+.home-jumbotron {
+  color: white;
+  background-image: url('../images/turks2.jpg');
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4) ), url('../images/turks2.jpg');
+  background-size: cover;
+  background-position: center center;
+  margin-bottom:0;
+  // fix this
+  height: 100vh;
+}
+
+.home-jumbotron2 {
+  color: white;
+  background-image: url('../images/turks1.jpg');
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4) ), url('../images/turks1.jpg');
+  background-size: cover;
+  background-position: center center;
+  margin-bottom:0;
+  // fix this
+  height: 100vh;
+}
+
+.next-arrow {
+  color: white;
+  display: block;
+  top: 50%;
+  position: absolute;
+  padding-right: 40px;
+  right: 0;
+  cursor: pointer;
+}
+
+
+.prev-arrow {
+  color: white;
+  display: block;
+  top: 50%;
+  position: absolute;
+  padding-left: 40px;
+  left: 0;
+  z-index: 1;
+  cursor: pointer
+}
+
+.down-arrow {
+  color: white;
+  display: block;
+  left: 50%;
+  position: absolute;
+  bottom: 80px;
+  z-index: 1;
+  cursor: pointer
+}
+
+
+
+.custom-dots {
+    position: relative;
+    bottom: 150px;
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+
+  li {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    cursor: pointer;
+    outline: 0;
+    background-size: cover;
+    border-radius: 50%;
+  }
+}
