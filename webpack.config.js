@@ -31,6 +31,13 @@ module.exports = {
 				exclude: /node_modules/
 			},
 			{
+				test: /\.css$/,
+				use: ['css-loader', 'postcss-loader'],
+				use: ExtractTextPlugin.extract({
+					use: ['css-loader', 'postcss-loader']
+				})
+			},
+			{
 				test: /\.scss$/,
 				use: ['css-loader', 'postcss-loader', 'sass-loader'],
 				use: ExtractTextPlugin.extract({

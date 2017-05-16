@@ -5,6 +5,7 @@ import { Jumbotron, Button, Carousel, CarouselItem } from 'react-bootstrap';
 
 import '../style/JumbotronContainer2.scss';
 
+import BookingInput from './BookingInput';
 
 
 export default class JumbotronContainer extends Component {
@@ -26,25 +27,26 @@ export default class JumbotronContainer extends Component {
     			<CarouselItem>
     				<img className="carousel-image" alt=""/>
     				<Carousel.Caption>
-			        <h3>Beach North Lol</h3>
-			        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+			        <h3>Beach North</h3>
+			        <p>description here.</p>
 		     	 	</Carousel.Caption>
     			</CarouselItem>
     			<CarouselItem>
     				<img className="carousel-image" alt=""/>
     				<Carousel.Caption>
-			        <h3>Beach North Lol</h3>
-			        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+			        <h3>Bathroom</h3>
+			        <p>description here.</p>
 		     	 	</Carousel.Caption>
     			</CarouselItem>
     			<CarouselItem>
     				<img className="carousel-image" alt=""/>
     				<Carousel.Caption>
-			        <h3>Beach North Lol</h3>
-			        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+			        <h3>Outisde</h3>
+			        <p>description here.</p>
 		     	 	</Carousel.Caption>
     			</CarouselItem>
     		</Carousel>
+            <BookingInput />
 	      {/*<DownArrow scrollDown={this.scrollDown}/>*/}
       </div>
     );

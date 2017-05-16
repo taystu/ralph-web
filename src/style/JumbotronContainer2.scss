@@ -7,6 +7,9 @@ $screen-xxs-min: 480px;
 
 
 .jumbotron-header {
+  font-family: 'Roboto';
+  font-size: 4em;
+  font-weight: 300;
   text-shadow: 0 0 100px rgba(0,0,0,0.9);
   position: relative;
   top: 150px;
@@ -36,7 +39,7 @@ $screen-xxs-min: 480px;
     position: fixed;
     width: 100%;
     height: 0;
-    background: url('../images/turks1.jpg');
+    background: url('../images/turks2.jpg');
     background-size: cover;
   }
 

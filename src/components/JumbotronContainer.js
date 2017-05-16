@@ -2,14 +2,9 @@ import React, { Component } from 'react';
 import Slider from 'react-slick';
 
 import { Jumbotron, Button } from 'react-bootstrap';
-
-
 var Scroll = require('react-scroll');
 
-
-
 import '../style/JumbotronContainer.scss';
-
 
 
 const PrevArrow = (props) => {

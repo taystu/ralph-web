@@ -10,10 +10,10 @@ export default class Location extends Component {
 		return (
 			<div className="container" style={{marginTop: '100px'}}>
  				<Row >
- 					<Col xs={2} sm={2} md={2} lg={2}>
+ 					<Col xs={12} sm={2} md={2} lg={2}>
  						<h4>Area</h4>
  					</Col>
- 					<Col style={{marginTop: '8px'}}xs={10} sm={10} md={10} lg={10}>
+ 					<Col style={{marginTop: '8px'}} xs={12} sm={10} md={10} lg={10}>
  						<Row>
  							<Col style={{height: '300px'}} md={12}>
  								<div className="space-divs">Located less than 100 yards 
