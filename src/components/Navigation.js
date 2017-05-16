@@ -20,7 +20,7 @@ export default class Navigation extends Component {
 
 	handleToggle(){
 		this.setState({
-			open: !this.state.open
+			open: !this.state.opend
 		})
 	}
 
@@ -36,6 +36,9 @@ export default class Navigation extends Component {
 		let locationClass = classNames({
 			'nav-highlight': this.props.highlightLocation
 		});
+		let photoClass = classNames({
+			'nav-highlight': this.props.highlightPhoto
+		});
 
 
 		return (
@@ -43,7 +46,7 @@ export default class Navigation extends Component {
 			  <Navbar fixedTop collapseOnSelect>
 			    <Navbar.Header>
 			      <Navbar.Brand >
-			        <img style={{width: '75px', height: '75px', textAlign: 'center'}} src={require("../images/logo_copied.png")} alt=""/>
+			        <img style={{width: '81px', height: '81px', textAlign: 'center'}} src={require("../images/logo_copied.png")} alt=""/>
 			      </Navbar.Brand>
 			      <Navbar.Toggle/>
 			      <h3 className="navbar-title">Salty Cottage Grand Turk</h3>
@@ -52,9 +55,10 @@ export default class Navigation extends Component {
 		      <Nav>
 		        <NavItem className={homeClass + " nav-item"} eventKey={1} href="#"><ScrollButton to="home" spy={true} smooth={true} duration={500}>Home</ScrollButton></NavItem>
 		        <NavItem className={introClass + " nav-item"} eventKey={2} href="#"><ScrollButton to="intro" spy={true} smooth={true} duration={500}>Intro</ScrollButton></NavItem>
-		        <NavItem className={locationClass + " nav-item"} eventKey={2} href="#"><ScrollButton to="location" spy={true} smooth={true} duration={500}>Location</ScrollButton></NavItem>
+		        <NavItem className={locationClass + " nav-item"} eventKey={3} href="#"><ScrollButton to="location" spy={true} smooth={true} duration={500}>Location</ScrollButton></NavItem>
+		        <NavItem className={photoClass + " nav-item"} eventKey={4} href="#"><ScrollButton to="photos" spy={true} smooth={true} duration={500}>Photos</ScrollButton></NavItem>
 		      </Nav>
-		      <Nav pullRight>
+		      <Nav className="hidden-xs hidden-sm" pullRight>
 		        <NavItem eventKey={1} href="#">Book!</NavItem>
 		      </Nav>
 		    </Navbar.Collapse>

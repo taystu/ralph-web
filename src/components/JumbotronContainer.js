@@ -17,7 +17,7 @@ const PrevArrow = (props) => {
 	return (
 			<i 
 				onClick={onClick} 
-				className="prev-arrow fa fa-3x fa-chevron-circle-left" 
+				className="prev-arrow fa fa-2x fa-chevron-circle-left" 
 				aria-hidden="true"></i>
 	)
 }
@@ -27,7 +27,7 @@ const NextArrow = (props) => {
 	return (
 			<i 
 				onClick={onClick} 
-				className="next-arrow fa fa-3x fa-chevron-circle-right" 
+				className="next-arrow fa fa-2x fa-chevron-circle-right" 
 				aria-hidden="true"></i>
 	)
 }
@@ -64,7 +64,6 @@ export default class JumbotronContainer extends Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      dotsClass: 'custom-dots',
       prevArrow: <PrevArrow />,
       nextArrow: <NextArrow />
     };

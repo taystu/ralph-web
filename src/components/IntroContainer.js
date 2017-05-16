@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 
-import { PageHeader, Col, Row, Breadcrumb} from 'react-bootstrap'; 
+import { PageHeader, Col, Row, Breadcrumb} from 'react-bootstrap';
+
+import '../style/IntroContainer.scss';
 
 export default class IntroContainer extends Component {
 	render() {
 		return (
-			<div className="container" style={{marginTop: '-39px'}}>
+			<div className="container" style={{marginTop: '-39px', marginBottom: '-50px'}}>
 				<PageHeader>
-					<bold>Beachfront Bungalow </bold> 	<small> <h4 style={{color: 'rgba(0,0,0,0.5)'}}>Grand Turk, Turks and Caicos, Caribbean</h4></small>
+					<bold>Salty Cottage </bold> 	<small> <h4 style={{color: 'rgba(0,0,0,0.5)'}}>Grand Turk, Turks and Caicos, Caribbean</h4></small>
 				</PageHeader>
  				<p>There is still one place in the world where you can stroll
  				down a deserted beach hand-in-hand with your loved one, and be the only 
@@ -37,10 +39,47 @@ export default class IntroContainer extends Component {
  				 	</Col>
  				</Row>
  				<hr/>
- 				<PageHeader>
- 					About
- 				</PageHeader>
- 				<p></p>
+ 				<Row>
+ 					<Col xs={2} sm={2} md={2} lg={2}>
+ 						<h4>The Space</h4>
+ 					</Col>
+ 					<Col xs={10} sm={10} md={10} lg={10}>
+ 						<Row>
+ 							<Col style={{marginTop: '8px'}} md={6}>
+ 								<div className="space-divs">Accomodates: <strong>5</strong></div>
+ 								<div className="space-divs">Bathrooms: <strong>2</strong></div>
+ 								<div className="space-divs">Bedrooms: <strong>4</strong></div>
+ 							</Col>
+ 							<Col md={6}>
+ 								<div className="space-divs">Beds: <strong>5</strong></div>
+ 								<div className="space-divs">Property Type: <strong>2</strong></div>
+ 							</Col>
+ 						</Row>
+ 						<hr/>
+ 					</Col>
+ 				</Row>
+ 				<Row>
+ 					<Col xs={2} sm={2} md={2} lg={2}>
+ 						<h4>Ameneties</h4>
+ 					</Col>
+ 					<Col xs={10} sm={10} md={10} lg={10}>
+ 						<Row>
+ 							<Col style={{marginTop: '8px'}} md={6}>
+ 								<div className="space-divs">Kitchen</div>
+ 								<div className="space-divs">Internet</div>
+ 								<div className="space-divs">TV</div>
+ 								<div className="space-divs">Air conditioning</div>
+ 							</Col>
+ 							<Col md={6}>
+ 								<div className="space-divs">Free parking</div>
+ 								<div className="space-divs">Private entrance</div>
+ 								<div className="space-divs">Family friendly</div>
+ 								<div className="space-divs">Pets allowed</div>
+ 							</Col>
+ 						</Row>
+ 						<hr/>
+ 					</Col>
+ 				</Row>
 			</div>
 		);
 	}

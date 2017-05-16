@@ -15,6 +15,10 @@ import JumbotronContainer from './JumbotronContainer';
 
 import IntroContainer from './IntroContainer';
 
+import Location from './Location';
+
+import PhotoGallery from './PhotoGallery';
+
 injectTapEventPlugin();
 
 export default class App extends Component {
@@ -23,7 +27,8 @@ export default class App extends Component {
 		this.state = {
 			highlightHome: false,
 			highlightIntro: false,
-			highlightLocation: false
+			highlightLocation: false,
+			highlightPhoto: false
 		}
 	}
 
@@ -72,6 +77,17 @@ export default class App extends Component {
 		})
 	}
 
+	photoEnter() {
+		this.setState({
+			highlightPhoto: true
+		})
+	}
+	photoLeave() {
+		this.setState({
+			highlightPhoto: false
+		})
+	}
+
 	render() {
 		return (
 			<MuiThemeProvider >
@@ -88,6 +104,7 @@ export default class App extends Component {
 									highlightHome={this.state.highlightHome} 
 									highlightIntro={this.state.highlightIntro} 
 									highlightLocation={this.state.highlightLocation}
+									highlightPhoto={this.state.highlightPhoto}
 								/>
 							</Element>
 						</div>
@@ -104,6 +121,26 @@ export default class App extends Component {
 						<div>
 							<Element name="intro">
 								<IntroContainer/>
+							</Element>
+						</div>
+					</Waypoint>
+					<Waypoint
+						onEnter={this.locationEnter.bind(this)}
+						onLeave={this.locationLeave.bind(this)}
+					>
+						<div>
+							<Element name="location">
+								<Location/>
+							</Element>
+						</div>
+					</Waypoint>
+					<Waypoint
+						onEnter={this.photoEnter.bind(this)}
+						onLeave={this.photoLeave.bind(this)}
+					>
+						<div>
+							<Element name="photos">
+								<PhotoGallery/>
 							</Element>
 						</div>
 					</Waypoint>

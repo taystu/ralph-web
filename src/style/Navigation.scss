@@ -19,12 +19,21 @@ $primary-blue: #3B5998;
  .navbar-brand {
  	padding: 0;
  }
+ li a {
+  padding: 0;
+ }
  .nav-item {
   font-size: 1.3em;
-  a {
-    padding-bottom: 23px;
+  a div {
+    padding: 23px
   }
  }
+
+  .container {
+    padding-left: 0;
+    margin-left: 16px;
+  }
+
  .navbar-title {
  	margin-top: 25px;
  	position: relative; 

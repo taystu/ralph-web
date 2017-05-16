@@ -13,14 +13,23 @@ $screen-xxs-min: 480px;
   z-index: 1;
   color: white;
   @media screen and (max-width: $screen-sm-min) {
-      font-size: 2em;
+      font-size: pem;
   }
 }
 
+
+.home-jumbotron2 {
+  color: white;
+  background-image: url('../images/beach1.jpg');
+  background-size: cover;
+  background-position: center center;
+  margin-bottom:0;
+  // fix this
+  height: 100vh;
+}
 .home-jumbotron {
   color: white;
-  background-image: url('../images/turks2.jpg');
-  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4) ), url('../images/turks2.jpg');
+  background-image: url('../images/beach2.jpg');
   background-size: cover;
   background-position: center center;
   margin-bottom:0;
@@ -28,10 +37,9 @@ $screen-xxs-min: 480px;
   height: 100vh;
 }
 
-.home-jumbotron2 {
+.home-jumbotron3 {
   color: white;
-  background-image: url('../images/turks1.jpg');
-  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4) ), url('../images/turks1.jpg');
+  background-image: url('../images/beach3.jpg');
   background-size: cover;
   background-position: center center;
   margin-bottom:0;
@@ -40,7 +48,7 @@ $screen-xxs-min: 480px;
 }
 
 .next-arrow {
-  color: white;
+  color: #337ab7;
   display: block;
   top: 50%;
   position: absolute;
@@ -51,7 +59,7 @@ $screen-xxs-min: 480px;
 
 
 .prev-arrow {
-  color: white;
+  color: #337ab7;
   display: block;
   top: 50%;
   position: absolute;
@@ -62,7 +70,7 @@ $screen-xxs-min: 480px;
 }
 
 .down-arrow {
-  color: white;
+  color: black;
   display: block;
   left: 50%;
   position: absolute;
@@ -72,35 +80,37 @@ $screen-xxs-min: 480px;
 }
 
 
+.slick-dots {
+  bottom: 25px;
 
-.custom-dots {
-    position: relative;
-    bottom: 150px;
-    width: 100%;
-    margin: 0;
-    list-style: none;
-    text-align: center;
-
-  li {
-    position: relative;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin: 0 10px;
-    padding: 0;
-    cursor: pointer;
+  li.slick-active {
+    button {
+      &:before {
+        color: #337ab7;
+      }
+    }
   }
 
-  li button {
-    font-size: 0;
-    line-height: 0;
-    display: block;
-    width: 40px;
-    height: 40px;
-    padding: 5px;
-    cursor: pointer;
-    outline: 0;
-    background-size: cover;
-    border-radius: 50%;
+  li {
+
+
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+
+    button {
+      &:before {
+        font-size: 15px;
+        top: 25%;
+        height: 40px;
+        width: 40px;
+        color: #337ab7;
+      }
+    }
+    button {
+      padding: 25px;
+      width: 50px;
+      height: 50px;
+    }
   }
 }
