@@ -15,19 +15,19 @@ const BeachGallery = (props) => {
         <Modal.Body>
         <Carousel>
           <CarouselItem>
-            <img width={'100%'} height={500} alt='900x500' src={require('../images/beach1.jpg')} />
+            <img width={'100%'} height={500} alt='900x500' src={require('../images/turks1.jpg')} />
             <Carousel.Caption>
             	<h3>North View</h3>
             </Carousel.Caption>
           </CarouselItem>
           <CarouselItem>
-            <img width={'100%'} height={500} alt='900x500' src={require('../images/beach2.jpg')} />
+            <img width={'100%'} height={500} alt='900x500' src={require('../images/turks1.jpg')} />
 	            <Carousel.Caption>
 	            	<h3>South View</h3>
 	            </Carousel.Caption>
           </CarouselItem>
           <CarouselItem>
-            <img width={'100%'} height={500} alt='900x500' src={require('../images/beach3.jpg')} />
+            <img width={'100%'} height={500} alt='900x500' src={require('../images/turks1.jpg')} />
 	            <Carousel.Caption>
 	            	<h3>East View</h3>
 	            </Carousel.Caption>

@@ -11,7 +11,7 @@ import '../style/global.scss';
 
 import Navigation from './Navigation';
 
-import JumbotronContainer from './JumbotronContainer';
+import JumbotronContainer from './JumbotronContainer2';
 
 import IntroContainer from './IntroContainer';
 

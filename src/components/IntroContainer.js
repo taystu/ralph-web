@@ -45,12 +45,12 @@ export default class IntroContainer extends Component {
  					</Col>
  					<Col xs={10} sm={10} md={10} lg={10}>
  						<Row>
- 							<Col style={{marginTop: '8px'}} md={6}>
+ 							<Col style={{marginTop: '8px'}} sm={6} md={6}>
  								<div className="space-divs">Accomodates: <strong>5</strong></div>
  								<div className="space-divs">Bathrooms: <strong>2</strong></div>
  								<div className="space-divs">Bedrooms: <strong>4</strong></div>
  							</Col>
- 							<Col md={6}>
+ 							<Col sm={6} md={6}>
  								<div className="space-divs">Beds: <strong>5</strong></div>
  								<div className="space-divs">Property Type: <strong>2</strong></div>
  							</Col>
@@ -64,13 +64,13 @@ export default class IntroContainer extends Component {
  					</Col>
  					<Col xs={10} sm={10} md={10} lg={10}>
  						<Row>
- 							<Col style={{marginTop: '8px'}} md={6}>
+ 							<Col style={{marginTop: '8px'}} sm={6} md={6}>
  								<div className="space-divs">Kitchen</div>
  								<div className="space-divs">Internet</div>
  								<div className="space-divs">TV</div>
  								<div className="space-divs">Air conditioning</div>
  							</Col>
- 							<Col md={6}>
+ 							<Col sm={6} md={6}>
  								<div className="space-divs">Free parking</div>
  								<div className="space-divs">Private entrance</div>
  								<div className="space-divs">Family friendly</div>
