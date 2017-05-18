@@ -17,10 +17,10 @@ $screen-xxs-min: 480px;
   color: white;
   display: inline;
   @media screen and (max-width: $screen-sm-min) {
-      font-size: 1.8em;
+      font-size: 2em;
   }
   @media screen and (max-width: $screen-xs-min) {
-      font-size: 1.5em;
+      font-size: 1.8em;
   }
 }
 

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 
-import mapstyle from '../helpers/mapstyle';
 
 const MyMarker = () => {
   return (

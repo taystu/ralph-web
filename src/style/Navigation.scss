@@ -1,6 +1,6 @@
 $screen-lg-min: 1200px;
 $screen-md-min: 992px;
-$screen-sm-min: 768px;
+$screen-sm-min: 767px;
 $screen-xs-min: 575px;
 $screen-xxs-min: 500px;
 $screen-xxxs-min: 450px;
@@ -10,6 +10,12 @@ $screen-gap: 344px;
 
 $primary-blue: #3B5998;
 
+
+.navbar-header {
+  background: white;
+  padding-right: 15px;
+  padding-bottom: 5px;
+}
 
 .navbar-fixed-top {
   border-bottom: 1px solid #999;
@@ -25,9 +31,32 @@ $primary-blue: #3B5998;
  }
  .nav-item {
   font-size: 1.3em;
-  a div {
-    padding: 23px
+  float: left;
+  @media screen and (max-width: $screen-sm-min) {
+      font-size: 1.1em;
   }
+  a div {
+    padding: 23px;
+    @media screen and (max-width: $screen-sm-min) {
+      padding: 15px 35px;
+    } 
+    @media screen and (max-width: $screen-xs-min) {
+      padding: 15px 25px;
+    } 
+    @media screen and (max-width: $screen-xxs-min) {
+      padding: 15px 15px;
+    } 
+    @media screen and (max-width: $screen-xxxs-min) {
+      padding: 15px 10px;
+    } 
+  }
+
+ }
+
+
+ .navbar-collapse {
+  padding-left: 0;
+  padding-right: 0;
  }
 
   .container {
@@ -36,30 +65,23 @@ $primary-blue: #3B5998;
   }
 
  .navbar-title {
- 	margin-top: 25px;
- 	position: relative; 
+ 	margin-top: 30px;
+ 	position: relative;
+  padding-left: 0; 
  	left: 25px;
  	margin-bottom: 0;
  	z-index: 0;
 
     @media screen and (max-width: $screen-sm-min) {
-      font-size: 2.1em;
-    }
-
- 	  @media screen and (max-width: $screen-xs-min) {
-      font-size: 1.8em;
+      font-size: 1.4em;
     }
 
 
- 	  @media screen and (max-width: $screen-xxs-min) {
-      font-size: 1.5em;
-    }
-
-    @media screen and (max-width: $screen-xxxs-min) {
-      font-size: 1.3em;
+    @media screen and (max-width: $screen-xs-min) {
+      font-size: 1.2em;
     }
     @media screen and (max-width: $screen-xxxxs-min) {
-      font-size: 1.2em;
+      font-size: 1em;
   	}
   }
 
@@ -74,9 +96,13 @@ $primary-blue: #3B5998;
 
 .navbar-nav {
 	margin-top: 20px;
+  @media screen and (max-width: $screen-sm-min) {
+      margin: 0;
+  }
 }
 
 .navbar-toggle {
 	margin-top: 22px;
 	z-index: 1;
 }
+

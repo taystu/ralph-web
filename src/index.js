@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App';
+import { Router, hashHistory } from 'react-router';
+
+import routes from './routes';
 
 
 ReactDOM.render(
-	<App />, document.querySelector('#app')
-);
+	<Router history={hashHistory} routes={routes} />
+  , document.querySelector('#app'));

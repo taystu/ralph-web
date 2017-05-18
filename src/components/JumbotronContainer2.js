@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
-
+import { Link } from 'react-router';
 import { Jumbotron, ButtonGroup, Button, Carousel, CarouselItem, Row, Col} from 'react-bootstrap';
 
 import '../style/JumbotronContainer2.scss';
@@ -19,13 +19,12 @@ export default class JumbotronContainer extends Component {
 
 
   render() {
-
     return (
     	<div className="home-jumbotron" style={{textAlign: 'center'}}>
               <ButtonGroup className="container">
                 <h1 className="jumbotron-header">Salty Cottage Grand Turk</h1>
                 <DatePickerWrapper />
-                <Button bsStyle="info" bsSize="large" className="book-button">Book Now</Button>
+                <Button bsStyle="info" bsSize="large" className="book-button"><Link to="booking">Book Now</Link></Button>
               </ButtonGroup>
             <Carousel>
     			<CarouselItem>
