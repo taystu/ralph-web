@@ -2,8 +2,9 @@ $screen-lg-min: 1200px;
 $screen-md-min: 992px;
 $screen-sm-min: 768px;
 $screen-xs-min: 575px;
-$screen-xxs-min: 480px;
-$screen-xxxs-min: 320px;
+$screen-xxs-min: 500px;
+$screen-xxxs-min: 450px;
+$screen-xxxxs-min: 420px;
 
 $screen-gap: 344px;
 
@@ -11,7 +12,7 @@ $primary-blue: #3B5998;
 
 
 .navbar-fixed-top {
-  border-width: 0;
+  border-bottom: 1px solid #999;
 }
 .navbar {
 	margin-bottom: 0px;
@@ -41,6 +42,10 @@ $primary-blue: #3B5998;
  	margin-bottom: 0;
  	z-index: 0;
 
+    @media screen and (max-width: $screen-sm-min) {
+      font-size: 2.1em;
+    }
+
  	  @media screen and (max-width: $screen-xs-min) {
       font-size: 1.8em;
     }
@@ -51,7 +56,10 @@ $primary-blue: #3B5998;
     }
 
     @media screen and (max-width: $screen-xxxs-min) {
-      font-size: 1.1em;
+      font-size: 1.3em;
+    }
+    @media screen and (max-width: $screen-xxxxs-min) {
+      font-size: 1.2em;
   	}
   }
 

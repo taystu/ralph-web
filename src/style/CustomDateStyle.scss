@@ -1,0 +1,23 @@
+$screen-xs-min: 575px;
+
+.DateRangePicker {
+	position: relative;
+	top: 200px;
+	z-index: 1;
+	text-align: center;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  
+}
+
+
+.DateRangePickerInput__clear-dates {
+	margin: 0;
+	padding: 0;
+}
+
+.DateInput {
+	@media screen and (max-width: $screen-xs-min) {
+		font-size: 1.1em;
+    line-height: 16px;
+  }
+}

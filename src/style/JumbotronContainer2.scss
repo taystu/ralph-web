@@ -17,8 +17,29 @@ $screen-xxs-min: 480px;
   color: white;
   display: inline;
   @media screen and (max-width: $screen-sm-min) {
-      font-size: 2em;
+      font-size: 1.8em;
   }
+  @media screen and (max-width: $screen-xs-min) {
+      font-size: 1.5em;
+  }
+}
+
+
+.btn-group {
+  height: 0;
+  .btn {
+    float: none;
+  }
+}
+
+.book-button {
+  position: relative;
+  top: 200px;
+  z-index: 1;
+  text-align: center;
+  float: center;
+  display: inline-block;
+  margin-top: 20px;
 }
 
 
