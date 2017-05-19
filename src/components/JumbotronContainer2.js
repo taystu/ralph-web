@@ -3,6 +3,9 @@ import Slider from 'react-slick';
 import { Link } from 'react-router';
 import { Jumbotron, ButtonGroup, Button, Carousel, CarouselItem, Row, Col} from 'react-bootstrap';
 
+var ScrollButton = require('../components/ScrollButton');
+
+
 import '../style/JumbotronContainer2.scss';
 
 import DatePickerWrapper from './DatePickerWrapper';
@@ -10,12 +13,10 @@ import DatePickerWrapper from './DatePickerWrapper';
 
 export default class JumbotronContainer extends Component {
 
-	constructor(props){
-		super(props);
-		this.state = {
+  constructor(props){
+  	super(props);
+  }
 
-		}
-	}
 
 
   render() {
@@ -23,8 +24,9 @@ export default class JumbotronContainer extends Component {
     	<div className="home-jumbotron" style={{textAlign: 'center'}}>
               <ButtonGroup className="container">
                 <h1 className="jumbotron-header">Salty Cottage Grand Turk</h1>
-                <DatePickerWrapper />
-                <Button bsStyle="info" bsSize="large" className="book-button"><Link to="booking">Book Now</Link></Button>
+                <DatePickerWrapper
+                  updateDates={this.props.updateDates}
+                  />
               </ButtonGroup>
             <Carousel>
     			<CarouselItem>

@@ -4,6 +4,9 @@ import moment from 'moment';
 import omit from 'lodash.omit';
 import momentPropTypes from 'react-moment-proptypes';
 
+import ScrollButton from './ScrollButton';
+import { Button } from 'react-bootstrap';
+
 import 'react-dates/lib/css/_datepicker.css';
 
 import { DateRangePicker } from 'react-dates'; 
@@ -25,7 +28,7 @@ const propTypes = {
     'endDate',
     'onDatesChange',
     'focusedInput',
-    'onFocusChange',
+    'onFocusChange'
   ]),
 };
 
@@ -59,11 +62,6 @@ export default class DatePickerWrapper extends Component {
   onFocusChange(focusedInput) {
     this.setState({ focusedInput });
   }
-  renderCalendarInfo() {
-  	return (
-  		<p>Hello</p>
-  	)
-  }
 
 	render() {
 	    const { focusedInput, startDate, endDate } = this.state;
@@ -76,6 +74,7 @@ export default class DatePickerWrapper extends Component {
 	      'autoFocusEndDate',
 	      'initialStartDate',
 	      'initialEndDate',
+	      'updateDates'
 	    ]);
 	    return (
 	      <div style={{width: '75%'}} className="container">
@@ -93,6 +92,17 @@ export default class DatePickerWrapper extends Component {
 	          enableOutsideDays
 	          showClearDates
 	        />
+	        <Button 
+	        	bsStyle="info" 
+	        	className="book-button">
+	        	<ScrollButton
+	        		onClick={this.props.updateDates.bind(this)}
+	        		to="booking" 
+	        		spy={true} 
+	        		smooth={true} 
+	        		duration={500}>Book Now
+	        	</ScrollButton>
+	        </Button>
 	      </div>
 	    );
 	  }

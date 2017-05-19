@@ -4,15 +4,13 @@ import Navigation from './Navigation';
 
 
 
-export default class Booking extends Component {
-	render() {
-		return (
-			<div>
-				<Navigation />
-				<div style={{marginTop: '150px'}} className="container">
-					<h3>Make Booking Here</h3>
-				</div>
+export default const Booking(props)=>{
+	return (
+		<div>
+			<Navigation />
+			<div className="container">
+				<h3>Booking Information</h3>
 			</div>
-		);
-	}
+		</div>
+	);
 }

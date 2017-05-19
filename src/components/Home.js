@@ -19,6 +19,8 @@ import Location from './Location';
 
 import PhotoGallery from './PhotoGallery';
 
+import Booking from './Booking';
+
 injectTapEventPlugin();
 
 export default class App extends Component {
@@ -28,7 +30,9 @@ export default class App extends Component {
 			highlightHome: false,
 			highlightIntro: false,
 			highlightLocation: false,
-			highlightPhoto: false
+			highlightPhoto: false,
+			startDate: null,
+			endDate: null
 		}
 	}
 
@@ -36,14 +40,12 @@ export default class App extends Component {
 
 
 	homeEnter() {
-		console.log('homenter');
 		this.setState({
 			highlightHome: true
 		})
 	}
 
 	homeLeave() {
-		console.log('home leave');
 		this.setState({
 			highlightHome: false,
 		})
@@ -51,14 +53,13 @@ export default class App extends Component {
 
 
 	introEnter() {
-		console.log('introenter');
 		this.setState({
 			highlightIntro: true
 		})
 	}
 
 	introLeave() {
-		console.log('introleave')
+		
 		this.setState({
 			highlightIntro: false
 		})
@@ -88,6 +89,14 @@ export default class App extends Component {
 		})
 	}
 
+	updateDates() {
+		this.setState({
+			startDate: this.state.startDate,
+			endDate: this.state.endDate
+		})
+	}
+
+
 	render() {
 		return (
 			<MuiThemeProvider >
@@ -111,7 +120,10 @@ export default class App extends Component {
 
 					{/*Intro*/}
 
-					<JumbotronContainer/>
+					<JumbotronContainer
+						updateDates={this.updateDates}
+					/>
+
 
 					<Waypoint
 						onEnter={this.introEnter.bind(this)}
@@ -143,6 +155,11 @@ export default class App extends Component {
 							</Element>
 						</div>
 					</Waypoint>
+						<div>
+							<Element name="booking">
+								<Booking startDate={this.state.startDate} endDate={this.state.endDate} />
+							</Element>
+						</div>
 				</div>
 			</MuiThemeProvider>
 		)

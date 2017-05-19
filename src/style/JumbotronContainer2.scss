@@ -39,7 +39,14 @@ $screen-xxs-min: 480px;
   text-align: center;
   float: center;
   display: inline-block;
-  margin-top: 20px;
+  margin-left: 3px;
+  padding: 0;
+  div {
+    padding: 15px;
+  }
+  @media screen and (max-width: $screen-sm-min) {
+      margin-top: 10px;
+  }
 }
 
 
