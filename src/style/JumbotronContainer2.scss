@@ -13,7 +13,7 @@ $screen-xxs-min: 480px;
   text-shadow: 0 0 100px rgba(0,0,0,0.9);
   position: relative;
   top: 150px;
-  z-index: 2;
+  z-index: 1;
   color: white;
   display: inline;
   @media screen and (max-width: $screen-sm-min) {
@@ -32,22 +32,6 @@ $screen-xxs-min: 480px;
   }
 }
 
-.book-button {
-  position: relative;
-  top: 200px;
-  z-index: 1;
-  text-align: center;
-  float: center;
-  display: inline-block;
-  margin-left: 3px;
-  padding: 0;
-  div {
-    padding: 15px;
-  }
-  @media screen and (max-width: $screen-sm-min) {
-      margin-top: 10px;
-  }
-}
 
 
 

@@ -1,8 +1,9 @@
+$screen-sm-min: 768px;
 $screen-xs-min: 575px;
 
 .DateRangePicker {
 	position: relative;
-	top: 200px;
+	top: -200px;
 	z-index: 1;
 	text-align: center;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -19,5 +20,28 @@ $screen-xs-min: 575px;
 	@media screen and (max-width: $screen-xs-min) {
 		font-size: 1.1em;
     line-height: 16px;
+  }
+}
+
+
+.calendar {
+  width: 75%;
+  text-align: center;
+}
+
+.book-button {
+  position: relative;
+  top: -200px;
+  z-index: 1;
+  text-align: center;
+  float: center;
+  display: inline-block;
+  margin-left: 3px;
+  padding: 0;
+  div {
+    padding: 15px;
+  }
+  @media screen and (max-width: $screen-sm-min) {
+      margin-top: 10px;
   }
 }

@@ -64,6 +64,7 @@ export default class DatePickerWrapper extends Component {
   }
 
 	render() {
+			console.log(this.state);
 	    const { focusedInput, startDate, endDate } = this.state;
 
 	    // autoFocus, autoFocusEndDate, initialStartDate and initialEndDate are helper props for the
@@ -74,7 +75,7 @@ export default class DatePickerWrapper extends Component {
 	      'autoFocusEndDate',
 	      'initialStartDate',
 	      'initialEndDate',
-	      'updateDates'
+	      'returnDates'
 	    ]);
 	    return (
 	      <div style={{width: '75%'}} className="container">
@@ -96,7 +97,6 @@ export default class DatePickerWrapper extends Component {
 	        	bsStyle="info" 
 	        	className="book-button">
 	        	<ScrollButton
-	        		onClick={this.props.updateDates.bind(this)}
 	        		to="booking" 
 	        		spy={true} 
 	        		smooth={true} 
