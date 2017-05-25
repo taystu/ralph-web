@@ -13,7 +13,7 @@ const BeachGallery = (props) => {
           <Button className='pull-right' onClick={props.onHide}>Close</Button>					
 				</Modal.Header>
         <Modal.Body>
-        <Carousel>
+        <Carousel style={{height: '50%'}}>
           <CarouselItem>
             <img width={'100%'} alt='900x500' src={require('../images/beach1.jpg')} />
             <Carousel.Caption>

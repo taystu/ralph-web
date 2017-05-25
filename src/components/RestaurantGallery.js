@@ -13,7 +13,7 @@ const RestaurantGallery = (props) => {
           <Button className='pull-right' onClick={props.onHide}>Close</Button>					
 				</Modal.Header>
         <Modal.Body>
-        <Carousel>
+        <Carousel style={{height: '50%'}} >
           <CarouselItem>
             <img width={'100%'} height={200} alt='900x500' src={require('../images/restaurant1.jpg')} />
             <Carousel.Caption>

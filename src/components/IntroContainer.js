@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import { PageHeader, Col, Row, Breadcrumb} from 'react-bootstrap';
 
+import InteriorSlider from './InteriorSlider';
+
 import '../style/IntroContainer.scss';
 
 export default class IntroContainer extends Component {
@@ -19,6 +21,17 @@ export default class IntroContainer extends Component {
  				<p>The place is Grand Turk. The destination is Pillory Beach. And the oceanfront 
  				paradise is Beachside Bungalow.Grand Turk is the Caribbean that few tourists will 
  				ever see – a place of few distractions and even fewer crowds.</p>
+ 				<hr/>
+ 				<Row className="interior-row">
+ 					<Col md={12}>
+ 						<InteriorSlider />
+ 					</Col>
+ 				</Row>
+ 				<Row className="interior-row">
+ 					<Col md={12}>
+ 						<p>cycling images here</p>
+ 					</Col>
+ 				</Row>
  				<hr/>
  				<Row className="icon-row">
  				 	<Col xs={3} sm={3} md={3} lg={3} className="text-center">
