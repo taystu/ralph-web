@@ -7,105 +7,63 @@ $screen-xxs-min: 480px;
 
 
 .jumbotron-header {
+  font-family: 'Roboto';
+  font-size: 4em;
+  font-weight: 300;
+  text-shadow: 0 0 100px rgba(0,0,0,0.9);
   position: relative;
-  top: 100px;
-  z-index: 2;
+  top: 150px;
+  z-index: 1;
   color: white;
   display: inline;
+  @media screen and (max-width: $screen-sm-min) {
+      font-size: 2em;
+  }
+  @media screen and (max-width: $screen-xs-min) {
+      font-size: 1.8em;
+  }
 }
 
 
-.home-jumbotron2 {
-  color: white;
-  background-image: url('../images/beach1.jpg');
-  background-size: cover;
-  background-position: center center;
-  margin-bottom:0;
-  // fix this
-  height: 100vh;
+.btn-group {
+  height: 0;
+  .btn {
+    float: none;
+  }
 }
+
+
+
 
 .home-jumbotron {
-  img {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.home-jumbotron3 {
-  color: white;
-  background-image: url('../images/beach3.jpg');
-  background-size: cover;
-  background-position: center center;
-  margin-bottom:0;
-  // fix this
   height: 100vh;
-}
-
-.next-arrow {
-  color: #337ab7;
-  display: block;
-  top: 50%;
-  position: absolute;
-  padding-right: 40px;
-  right: 0;
-  cursor: pointer;
-}
-
-
-.prev-arrow {
-  color: #337ab7;
-  display: block;
-  top: 50%;
-  position: absolute;
-  padding-left: 40px;
-  left: 0;
-  z-index: 1;
-  cursor: pointer
-}
-
-.down-arrow {
-  color: black;
-  display: block;
-  left: 50%;
-  position: absolute;
-  bottom: 80px;
-  z-index: 1;
-  cursor: pointer
-}
-
-
-.slick-dots {
-  bottom: 25px;
-
-  li.slick-active {
-    button {
-      &:before {
-        color: #337ab7;
-      }
-    }
+  .carousel {
+    height: 100%;
+    margin-top: -33px;
   }
 
-  li {
+  .carousel-caption {
+    text-shadow: 0 0 100px rgba(0,0,0,0.9);
+  }
+  
+
+  .carousel-image {
+    position: fixed;
+    width: 100%;
+    height: 0;
+    background: url('../images/turks2.jpg');
+    background-size: cover;
+  }
 
 
-    margin: 5px;
-    width: 50px;
-    height: 50px;
 
-    button {
-      &:before {
-        font-size: 15px;
-        top: 25%;
-        height: 40px;
-        width: 40px;
-        color: #337ab7;
+  .carousel-inner {
+    height: 100%;
+    .item {
+      height: 100%;
+      img {
+        height: 100%;
       }
-    }
-    button {
-      padding: 25px;
-      width: 50px;
-      height: 50px;
     }
   }
 }

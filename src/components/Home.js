@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import moment from 'moment';
 import omit from 'lodash.omit';
 import momentPropTypes from 'react-moment-proptypes';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import injectTapEventPlugin from 'react-tap-event-plugin';
 
 var Scroll  = require('react-scroll');
 import ScrollButton from './ScrollButton';
@@ -29,7 +27,7 @@ import Navigation from './Navigation';
 
 import DatePickerWrapper from './DatePickerWrapper';
 
-import JumbotronContainer from './JumbotronContainer2';
+import JumbotronContainer from './JumbotronContainer';
 
 import IntroContainer from './IntroContainer';
 
@@ -39,7 +37,8 @@ import PhotoGallery from './PhotoGallery';
 
 import Booking from './Booking';
 
-injectTapEventPlugin();
+import Footer from './Footer';
+
 
 
 const propTypes = {
@@ -159,7 +158,6 @@ export default class App extends Component {
 	      'initialEndDate',
 	  ]);
 		return (
-			<MuiThemeProvider >
 				<div className="app-container">
 				{/*Jumbo*/}
 					<Waypoint
@@ -203,7 +201,8 @@ export default class App extends Component {
 		        	<ScrollButton
 		        		to="booking" 
 		        		spy={true} 
-		        		smooth={true} 
+		        		smooth={true}
+		        		offset={-200} 
 		        		duration={500}>Book Now
 		        	</ScrollButton>
 		        </Button>
@@ -244,8 +243,8 @@ export default class App extends Component {
 								<Booking startDate={this.state.startDate} endDate={this.state.endDate}/>
 							</Element>
 						</div>
+					<Footer/>
 				</div>
-			</MuiThemeProvider>
 		)
 	}
 }
