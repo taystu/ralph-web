@@ -241,6 +241,21 @@ export default class App extends Component {
 						<div>
 							<Element name="booking">
 								<Booking startDate={this.state.startDate} endDate={this.state.endDate}/>
+									<div id="bottom-calendar" className="container calendar">
+						        <DateRangePicker
+						          withPortal={true}
+						          onDatesChange={this.onDatesChange}
+						          onFocusChange={this.onFocusChange}
+						          focusedInput={focusedInput}
+						          startDate={startDate}
+						          endDate={endDate}
+						          numberOfMonths={1}
+						          minimumNights={3}
+						          showDefaultInputIcon
+						          enableOutsideDays
+						          showClearDates
+						        />
+					      	</div>
 							</Element>
 						</div>
 					<Footer/>

@@ -8,9 +8,6 @@ var ScrollButton = require('../components/ScrollButton');
 
 import '../style/JumbotronContainer.scss';
 
-import DatePickerWrapper from './DatePickerWrapper';
-
-
 export default class JumbotronContainer extends Component {
 
   constructor(props){

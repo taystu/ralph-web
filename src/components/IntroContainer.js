@@ -1,13 +1,20 @@
 import React, { Component } from 'react';
 
-import { PageHeader, Col, Row, Breadcrumb} from 'react-bootstrap';
+import { PageHeader, Col, Row, Breadcrumb, Button } from 'react-bootstrap';
 
 import InteriorSlider from './InteriorSlider';
 
 import '../style/IntroContainer.scss';
 
 export default class IntroContainer extends Component {
+	constructor(props){
+		super(props);
+	}
+
+
 	render() {
+
+
 		return (
 			<div className="container" style={{marginTop: '-39px', marginBottom: '-50px'}}>
 				<PageHeader>
@@ -19,21 +26,14 @@ export default class IntroContainer extends Component {
  				you can turn off the world, relax completely, and recharge totally.
  				</p>
  				<p>The place is Grand Turk. The destination is Pillory Beach. And the oceanfront 
- 				paradise is Beachside Bungalow.Grand Turk is the Caribbean that few tourists will 
+ 				paradise is Salty Cottage Grand Turk.Grand Turk is the Caribbean that few tourists will 
  				ever see – a place of few distractions and even fewer crowds.</p>
  				<hr/>
- 				<Row className="interior-row">
- 					<Col md={12}>
- 						<InteriorSlider />
- 					</Col>
+ 				<Row className="mobile-photos container">
+ 					<h3>Interior Photos</h3>
+					<InteriorSlider />
  				</Row>
- 				<Row className="interior-row">
- 					<Col md={12}>
- 						<p>cycling images here</p>
- 					</Col>
- 				</Row>
- 				<hr/>
- 				<Row className="icon-row">
+ 				<Row className="icon-row" style={{marginTop: '50px'}} >
  				 	<Col xs={3} sm={3} md={3} lg={3} className="text-center">
  				 		<i style={{color: 'rgb(199, 195, 199)'}} className="fa fa-2x fa-home" aria-hidden="true"></i>
  				 		<p style={{color: 'rgb(199,195,199)'}} >Entire home</p>

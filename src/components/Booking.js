@@ -118,7 +118,7 @@ export default class Booking extends Component {
 										<FormControl name="ENDDATE" type="text" value={this.props.endDate.format('LL')} onChange={this.handleEndDate.bind(this)} />
 									</FormGroup>
 							    <Button bsSize="large" bsStyle="info" type="submit" className="button" name="submit" value="Submit property review">
-							      Submit
+							      Submit Request
 							    </Button>
 								</form>
 							</Col>
@@ -135,7 +135,7 @@ export default class Booking extends Component {
 					<Col md={10} style={{marginTop: '8px'}}>
 						<Row>
 							<Col md={12}>
-								<p>No booking dates selected</p>
+								<p>No booking dates selected select dates below. </p>
 							</Col>
 						</Row>
 					</Col>

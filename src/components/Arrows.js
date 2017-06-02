@@ -24,11 +24,12 @@ class NextArrow extends Component {
 }
 
 
-export { PrevArrow,  NextArrow };
-const NextArrow = (props) => {
+export default { PrevArrow,  NextArrow };
+/*const NextArrow = (props) => {
 	const { className, style, onClick } = props
 	return (
 		<Button>
 			<i onClick={onClick} className="slick-arrow slick-next fa fa-3x fa-chevron-right" aria-hidden="true"></i>
 		</Button>
 	)
+}*/

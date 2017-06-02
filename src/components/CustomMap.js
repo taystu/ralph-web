@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
-
+import mapStyles from '../helpers/mapStyles';
 
 import GooglePlaces from './GooglePlaces';
 const MyMarker = () => {
@@ -9,8 +9,17 @@ const MyMarker = () => {
   )
 }
 
+const RestaurantMarker = () => {
+  return (
+    <i style={{color: 'black'}} class="fa fa-3x fa-cutlery" aria-hidden="true"></i>
+  )
+}
+
 
 const API_KEY = "AIzaSyDfs7vs5c-cmPyXlbhX2k854fMxVDzPUrA";
+const mapOptions = {
+  styles: mapStyles
+}
 
 
 export default class SimpleMap extends Component {
@@ -33,16 +42,20 @@ export default class SimpleMap extends Component {
         }}
         options={{
           mapTypeControl:true,
-          mapTypeId: 'satellite'
         }}
         center={{
           lat: 21.467505,
           lng: -71.146346
         }}
+        options={mapOptions}
         defaultZoom={16}
         yesIWantToUseGoogleMapApiInternals
         >
         <MyMarker
+          lat={21.467505}
+          lng={-71.146346}
+        />
+        <RestaurantMarker
           lat={21.467505}
           lng={-71.146346}
         />

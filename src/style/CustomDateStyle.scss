@@ -1,6 +1,12 @@
 $screen-sm-min: 768px;
 $screen-xs-min: 575px;
 
+#bottom-calendar {
+  .DateRangePicker {
+    top: -60px !important;
+  }
+}
+
 .DateRangePicker {
 	position: relative;
 	top: -200px;
@@ -26,6 +32,7 @@ $screen-xs-min: 575px;
 
 .calendar {
   width: 75%;
+  height: 0;
   text-align: center;
 }
 
