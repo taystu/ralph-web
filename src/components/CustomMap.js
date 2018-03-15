@@ -11,7 +11,7 @@ const MyMarker = () => {
 
 const RestaurantMarker = () => {
   return (
-    <i style={{color: 'black'}} class="fa fa-3x fa-cutlery" aria-hidden="true"></i>
+    <i style={{color: 'black'}} className="fa fa-3x fa-cutlery" aria-hidden="true"></i>
   )
 }
 
@@ -55,10 +55,10 @@ export default class SimpleMap extends Component {
           lat={21.467505}
           lng={-71.146346}
         />
-        <RestaurantMarker
+{/*         <RestaurantMarker
           lat={21.467505}
           lng={-71.146346}
-        />
+        /> */}
 {/*        <GooglePlaces map={this.state.map} />
 */}
       </GoogleMapReact>

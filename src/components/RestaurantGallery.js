@@ -26,12 +26,6 @@ const RestaurantGallery = (props) => {
 	            	<h3>Sanddals</h3>
 	            </Carousel.Caption>
           </CarouselItem>
-          <CarouselItem>
-            <img width={'100%'} height={200} alt='900x500' src={require('../images/restaurant3.jpg')} />
-	            <Carousel.Caption>
-	            	<h3>Lobster Pallace</h3>
-	            </Carousel.Caption>
-          </CarouselItem>
         </Carousel>
         </Modal.Body>
       </Modal>
